@@ -1,0 +1,36 @@
+@import url('http://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&swap');
+
+*{
+ transition: all 0.2s;
+ margin: 0;
+ padding: 0;
+ --yellow: #ddba08;
+ --green:#13402B;
+ --white: #F2F2F2;
+ --black: #0D0D0D;
+ --red: #e65061;
+ --gray: #dcdcdc;
+ --shadow: rgba(0, 0, 0, 0.5);
+ --fontFamily: "Lato"
+}
+
+#container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 270px  1fr;
+    grid-template-rows:   1fr;
+    grid-template-areas: 'Sidebar Section';
+    font-family:var(--fontFamily), sans-serif;
+}
+
+@media only screen and (max-width: 978px){
+    #container{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows:    0.2fr 1fr;
+        grid-template-areas:'Nav'  'Section'  ;
+        font-family:var(--fontFamily), sans-serif;
+    }
+  
+}

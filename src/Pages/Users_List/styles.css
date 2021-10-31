@@ -1,0 +1,59 @@
+
+.Table{
+  margin: 100px  auto 100px auto ;
+  align-items: center;
+  max-height: 500px;
+  justify-content:center;
+  overflow: auto;
+}
+
+
+table > thead{
+    background: var(--green);
+    color: var(--white)
+  }
+
+   table > thead > tr > th{
+    border: 1px solid var(--gray);
+    padding: 10px;
+    text-align: center;
+  }
+  table > tbody > tr{
+    height:40px;
+    text-align: center;
+  }
+  table > tbody > tr > td{
+    border: 1px solid var(--gray);
+    padding: 10px;
+    word-break: break-word;
+  }
+
+.Delete{
+  background: var(--red);
+  color:var(--white);
+}
+
+.update{
+  background: var(--yellow);
+  color:var(--white);
+}
+
+@media only screen and (max-width: 978px){
+  Table{
+    font-size: 12px;
+  }
+  table{
+    word-wrap: break-word;
+  }
+  table > tbody > tr{
+    min-height:80px;
+    text-align: center;
+  }
+
+  table > thead > tr > th{
+    padding: 5px;
+  }
+  table > tbody > tr > td{
+    padding: 5px;
+  }
+}

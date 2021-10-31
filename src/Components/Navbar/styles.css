@@ -1,0 +1,40 @@
+
+.navbar {
+    display: none;    
+}
+
+@media only screen and (max-width: 978px){
+.navbar{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100px 100px 1fr;
+    gap: 10px;
+    background: var(--green);
+    height:60px;
+    box-shadow:  1px 1px 10px var(--shadow);
+    grid-area: Nav;
+}
+.Nav-Link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:55px;
+    background: var(--yellow);
+    color: var(--white);
+    border-radius: 2px;
+    padding: 3px;
+}
+.Nav-Link > a {
+    color: var(--white);
+    padding:2px;
+}
+.Nav-Logo{
+    display:grid;
+    justify-content: right;
+    align-items: center;
+}
+.Nav-Logo> img {
+    height:40px;
+    margin-right: 20px;
+}
+}
